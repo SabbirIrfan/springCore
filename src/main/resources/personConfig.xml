@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.example.constructorinjeciton.Certi" name="cer">
+        <constructor-arg value="its a certificate" />
+    </bean>
+
+    <bean class="org.example.constructorinjeciton.Person" name="person">
+        <constructor-arg value="Irfan" />
+        <constructor-arg value="1" type="int" />
+        <constructor-arg ref="cer" />
+
+    </bean>
+</beans>
+
