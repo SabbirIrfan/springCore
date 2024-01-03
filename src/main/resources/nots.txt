@@ -1,0 +1,79 @@
+Meaning of the simble:
+**  :: notes and key points about spring core
+## ::  notes and key points involving outside the scope of spring core
+%%%%:: section
+%>> :: subsection
+
+@@:: java core key notes :@@
+
+%%%%lifecycle of spring bean::%%%%
+
+property setting::
+init()::
+read and use of the spring bean
+destroy()
+
+**public void init() >> name can be anything but the signature must be like this.
+**public void destroy() >>  name can be anything but the signature must be like this.
+**to destroy we use a method form "AbstractApplicationContex" called registeringShutdownHook();
+##
+### difference between servlet and bean::
+##servlet first init() and then loads the property
+##but bean first does the property setting then loads the init()
+##
+
+%>> ::using XML
+
+**
+**inside bean <bean> we need to define the init method and destroy method  using "init-method" and "destroy-method"
+**the signature must be same but the name can changed and provided in the bean configuration
+
+@@:: interface can inherit multiple INTERFACE (not calss ) ::@@
+
+%>> :: lifeCycle implementation using Interface
+** we need initializingBean and DisposableBean
+** need to implement the InitializingBean and DisposableBean interface to bean class
+** and override the afterPropertiesSet() and destroy() method
+**** multiple bean calling:: the oder of lifcycle will be maintained but the order of bean may overlap each other
+**** In Spring, if beans have no explicit dependencies, their init() methods run independently during container initialization, and the execution order is not guaranteed.
+
+%>> :: lifeCycle implementation using annotation
+** @Postconstruct @PreDestroy
+*** ::Note:: they are depricated after java 9 so for them to work we need to add DEPENDENCY of java.annotation-api ::NOTE::
+*** ::Note:: we need to use <context : annotation-config /> tag ...because they are disabled by default ::Note::
+
+
+%%%% Autowiring in Spring ::%%%%
+** feature of spring frame work  which injects the dependency AUTOMATICALLY
+**it works with reference only >> so the primitive data types and string values can't be used
+** modes are :: (1) no mode (2) byName (3) byType (4) byType (5) constructor (6) autodetect { depricated since spring 3}
+** Annotation >> @Autowired
+
+%>> :: Annotation >> @Autowired
+** constructor() @Autowired
+** property @Autowired
+** setterMethod() @Autowired
+***** recommended >> name property shall be (not necessary) same as the object name in the Dependency Injection.
+
+%>> :: @Qualifier("name of the bean ")
+** used with the @Autowired
+** and can fix the conflict of the bean with name property.
+
+%%% StandAlone Collection %%%
+<util:list list-class = "java.util.LInkedList" id = "to use as a ref in other bean">
+<util: map class="" id="">
+<util:properties id="">  // no class needed//
+
+%%%Stereotype Annotaion%%%
+** @component("name of the bean") >> parameter is optional
+
+** @Value("value ") is used to set the variable >>> ??primitive type??
+** @Value(#{Collection})  >> collection has to be added in the xml file with standalone Utill or the other way
+
+
+** default scope is SingleTone
+** we can change it to prototype by adding scope="" attribute with the @component
+
+
+
+
