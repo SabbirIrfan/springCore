@@ -1,3 +1,13 @@
+why spring core?
+<It is one of very few projects that can claim clean
+code structure with no circular dependencies between packages.>
+<making APIs that are intuitive and that hold up across many versions and ma>
+<Provide choice at every level. Spring lets you defer design decisions as late as possible>
+<Maintain strong backward compatsions. Spring supports a carefully chosen range of JDK
+ versions and third-party libraries to facilitate maintenance>
+<Accommodate diverse perspective>
+
+
 Meaning of the simble:
 **  :: notes and key points about spring core
 ## ::  notes and key points involving outside the scope of spring core
@@ -66,8 +76,8 @@ destroy()
 
 %%%Stereotype Annotaion%%%
 ** @component("name of the bean") >> parameter is optional
-
-** @Value("value ") is used to set the variable >>> ??primitive type??
+%>> SpEL >> @Value("#{Expression}")
+** @Value("value ") is used to set the variable
 ** @Value(#{Collection})  >> collection has to be added in the xml file with standalone Utill or the other way
 
 
@@ -75,5 +85,10 @@ destroy()
 ** we can change it to prototype by adding scope="" attribute with the @component
 
 
+%%%@Component%%%
+** use case 1: make config.xml where we give the base class. and add @Component over the class we want the bean of
+*** use case 2: delete the config.xml and use "AnnotationConfigApplicationContext"
+***************ApplicationContext context = new AnnotationConfigApplicationContext("org.example.configcomponenetbean");
 
+%%%Configuration%%%
 

@@ -7,7 +7,9 @@
        http://www.springframework.org/schema/context
        https://www.springframework.org/schema/context/spring-context.xsd">
     <context:annotation-config />
-
+    <bean class="org.example.constructorinjeciton.Certi" id="certi">
+        <constructor-arg value="its a certificate" />
+    </bean>
     <context:component-scan base-package="org.example.steriotype" />
 
 

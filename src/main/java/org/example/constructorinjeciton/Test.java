@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 
     public static void main(String[] args) {
-        AbstractApplicationContext context = new ClassPathXmlApplicationContext("personConfig.xml");
+        AbstractApplicationContext context = new ClassPathXmlApplicationContext("constructorpersonConfig.xml");
         context.registerShutdownHook();
         Person p = (Person) context.getBean("person");
 

@@ -2,6 +2,7 @@ package org.example.steriotype;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.expression.Expression;
 
 public class Test {
 
@@ -9,10 +10,10 @@ public class Test {
         ApplicationContext context = new ClassPathXmlApplicationContext("steriotypeConfig.xml");
         Person p = context.getBean("component", Person.class);
 
-        System.out.println(p.hashCode());
+        System.out.println(p);
 
-        Person p2 = context.getBean("component", Person.class);
+        Expression e = p.sPeL("#{22*2}");
 
-        System.out.println(p2.hashCode());
+        System.out.println(e.getValue());
     }
 }

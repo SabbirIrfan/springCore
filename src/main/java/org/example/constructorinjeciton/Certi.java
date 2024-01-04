@@ -1,5 +1,10 @@
 package org.example.constructorinjeciton;
 
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
+//@Component
+
 public class Certi {
     private String name;
 

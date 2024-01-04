@@ -3,7 +3,7 @@ package org.example.steriotype;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Certi {
     @Value("BSc in CSE")
     private String name;
