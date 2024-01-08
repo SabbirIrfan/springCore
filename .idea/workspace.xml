@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e9045e3-458b-4cf3-a6bb-918ae9723edb" name="Changes" comment="spring core &#10;--  lifeCycle implementation &#10;--  Autowiring in Spring :&#10;--Annotation--Stereotype Annotaion&#10;--StandAlone Collection&#10;IoC 3/1/24">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/configcomponenetbean/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/configcomponenetbean/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/configcomponenetbean/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/configcomponenetbean/configXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/componentconfig.xml" afterDir="false" />
+    <list default="true" id="4e9045e3-458b-4cf3-a6bb-918ae9723edb" name="Changes" comment="spring core &#10;--  scope &gt;&gt; prototype / singletone&#10;--  SpEL :&#10;--removing complexXML&#10;-- with @Configuration and @Bean&#10;-- also @ComponentScan without using @Bean &#10;IoC 3/1/24">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/springjdbc/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/springjdbc/dao/PersonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/springjdbc/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/springjdbc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Certi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Certi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/steriotype/Certi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/steriotype/Certi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/steriotype/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/steriotype/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/steriotype/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/steriotype/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/autowire/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/autowire/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/autowire/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/autowire/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/autowireConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/autowireConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/nots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/nots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/constructorpersonConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/steriotypeConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/steriotypeConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +25,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -53,6 +50,7 @@
     "Application.Test.executor": "Run",
     "Application.org.example.autowire.Test.executor": "Run",
     "Application.org.example.configcomponenetbean.Test.executor": "Run",
+    "Application.org.example.springjdbc.App.executor": "Run",
     "Application.org.example.steriotype.Test.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -79,13 +77,13 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.example.configcomponenetbean.Test">
+  <component name="RunManager" selected="Application.org.example.springjdbc.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <option name="MAIN_CLASS_NAME" value="org.example.springjdbc.App" />
       <module name="SpringCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.springjdbc.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.org.example.configcomponenetbean.Test" />
+        <item itemvalue="Application.org.example.springjdbc.App" />
         <item itemvalue="Application.org.example.autowire.Test" />
+        <item itemvalue="Application.org.example.configcomponenetbean.Test" />
         <item itemvalue="Application.org.example.steriotype.Test" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +173,7 @@
       <workItem from="1704185808813" duration="17334000" />
       <workItem from="1704276119946" duration="6186000" />
       <workItem from="1704286937861" duration="3913000" />
-      <workItem from="1704349704290" duration="12940000" />
+      <workItem from="1704349704290" duration="25878000" />
     </task>
     <task id="LOCAL-00001" summary="spring core -- use of bean , IoC 2/1/24">
       <option name="closed" value="true" />
@@ -193,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704292194052</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="spring core &#10;--  scope &gt;&gt; prototype / singletone&#10;--  SpEL :&#10;--removing complexXML&#10;-- with @Configuration and @Bean&#10;-- also @ComponentScan without using @Bean &#10;IoC 3/1/24">
+      <option name="closed" value="true" />
+      <created>1704373679677</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704373679677</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +208,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring core -- use of bean , IoC 2/1/24" />
     <MESSAGE value="spring core &#10;--  lifeCycle implementation &#10;--  Autowiring in Spring :&#10;--Annotation--Stereotype Annotaion&#10;--StandAlone Collection&#10;IoC 3/1/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring core &#10;--  lifeCycle implementation &#10;--  Autowiring in Spring :&#10;--Annotation--Stereotype Annotaion&#10;--StandAlone Collection&#10;IoC 3/1/24" />
+    <MESSAGE value="spring core &#10;--  scope &gt;&gt; prototype / singletone&#10;--  SpEL :&#10;--removing complexXML&#10;-- with @Configuration and @Bean&#10;-- also @ComponentScan without using @Bean &#10;IoC 3/1/24" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring core &#10;--  scope &gt;&gt; prototype / singletone&#10;--  SpEL :&#10;--removing complexXML&#10;-- with @Configuration and @Bean&#10;-- also @ComponentScan without using @Bean &#10;IoC 3/1/24" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,12 +1,22 @@
 package org.example.autowire;
 
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 
-public class Employee {
+public class Employee implements ApplicationContextAware {
+
+    private ApplicationContext applicationContext;
+
     @Autowired
-    @Qualifier("address1")
     private Address address;
+
+    protected Address getAddress() {
+// notice the Spring API dependency!
+        return this.applicationContext.getBean("address1", Address.class);
+    }
 
     public Employee(Address address) {
         this.address = address;
@@ -16,9 +26,9 @@ public class Employee {
         super();
     }
 
-    public Address getAddress() {
-        return address;
-    }
+//    public Address getAddress() {
+//        return address;
+//    }
 
     public void setAddress(Address address) {
         this.address = address;
@@ -28,4 +38,10 @@ public class Employee {
     public String toString() {
         return address.toString();
     }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.applicationContext = applicationContext;
+    }
+
 }

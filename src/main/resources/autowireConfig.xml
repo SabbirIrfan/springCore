@@ -9,7 +9,7 @@
         <property name="golli" value="quaty mosque 1111"/>
         <property name="shohor" value="dhaka,badda" />
     </bean>
-    <bean class="org.example.autowire.Address" name="address1">
+    <bean class="org.example.autowire.Address" name="address1" scope="prototype">
         <property name="golli" value="quaty mosque0000"/>
         <property name="shohor" value="dhaka,badda" />
     </bean>

@@ -87,8 +87,18 @@ destroy()
 
 %%%@Component%%%
 ** use case 1: make config.xml where we give the base class. and add @Component over the class we want the bean of
-*** use case 2: delete the config.xml and use "AnnotationConfigApplicationContext"
-***************ApplicationContext context = new AnnotationConfigApplicationContext("org.example.configcomponenetbean");
-
 %%%Configuration%%%
+*** use case 2: delete the config.xml and create config.java and use @Configuration and @ComponentScan
+***************ApplicationContext context = new AnnotationConfigApplicationContext("org.example.config.class");
 
+%%% @Bean %%%
+** removing @componentScan annotation and using @Bean annotation for methods ...
+
+
+%%% what is JDBC %%%
+**its  API to perform operations with database.
+** spring jdbc provides jdbc template
+
+**JDBC template method
+** update() -> insert, update, delete
+** execute() -> select queries >> returns a ResultSet
