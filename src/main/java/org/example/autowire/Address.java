@@ -1,5 +1,11 @@
 package org.example.autowire;
 
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component("address1" )
+@Scope("prototype")
 public class Address {
     private String golli;
     private String shohor;

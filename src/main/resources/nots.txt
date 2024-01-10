@@ -102,3 +102,8 @@ destroy()
 **JDBC template method
 ** update() -> insert, update, delete
 ** execute() -> select queries >> returns a ResultSet
+
+%%% queryForObject(String sql, RowMapper<T> rowMapper, Object args)%%%
+%%% RowMapper>> it converts the resultSet into object of every row fof the entity used in the implementation of row mapper
+
+*** RowMapper is a FunctionalInterface ***
