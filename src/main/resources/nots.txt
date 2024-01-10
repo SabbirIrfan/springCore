@@ -1,3 +1,6 @@
+
+
+*** caps_lock as the home button *** )))
 why spring core?
 <It is one of very few projects that can claim clean
 code structure with no circular dependencies between packages.>
@@ -8,13 +11,15 @@ code structure with no circular dependencies between packages.>
 <Accommodate diverse perspective>
 
 
+
+
 Meaning of the simble:
 **  :: notes and key points about spring core
 ## ::  notes and key points involving outside the scope of spring core
 %%%%:: section
 %>> :: subsection
 
-@@:: java core key notes :@@
+@@:: java core key notes ::@@
 
 %%%%lifecycle of spring bean::%%%%
 
@@ -31,6 +36,23 @@ destroy()
 ##servlet first init() and then loads the property
 ##but bean first does the property setting then loads the init()
 ##
+%%%% BEAN %%%%
+**bla bla bla**
+
+**HANDLING THE NESTED CLASS(static)**
+** if a class someThing has a nested static class otherThing then >>
+** to create the bean of the class we have to provide the
+***>> Class= com.example.SomeThing$OtherThing or com.example.SomeThing.OtherThing
+
+$$$$$$$$$$DOC$$$$$$$$$$$
+Nested class names
+If you want to configure a bean definition for a nested class, you may use either the binary
+name or the source name of the nested class.
+For example, if you have a class called SomeThing in the com.example package, and this
+SomeThing class has a static nested class called OtherThing, they can be separated by a dollar
+sign ($) or a dot (.). So the value of the class attribute in a bean definition would be
+com.example.SomeThing$OtherThing or com.example.SomeThing.OtherThing.
+$$$$$$$$$$DOC$$$$$$$$$$$
 
 %>> ::using XML
 
@@ -46,6 +68,11 @@ destroy()
 ** and override the afterPropertiesSet() and destroy() method
 **** multiple bean calling:: the oder of lifcycle will be maintained but the order of bean may overlap each other
 **** In Spring, if beans have no explicit dependencies, their init() methods run independently during container initialization, and the execution order is not guaranteed.
+
+
+%%% ApplicationContext %%%
+** subclass of BeanFactory which The root interface for accessing a Spring bean container.
+** adds more enterprise-specific functionality.
 
 %>> :: lifeCycle implementation using annotation
 ** @Postconstruct @PreDestroy
@@ -83,7 +110,6 @@ destroy()
 
 ** default scope is SingleTone
 ** we can change it to prototype by adding scope="" attribute with the @component
-
 
 %%%@Component%%%
 ** use case 1: make config.xml where we give the base class. and add @Component over the class we want the bean of

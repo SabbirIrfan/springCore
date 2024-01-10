@@ -1,0 +1,19 @@
+How AOP works!!
+    1::Define Aspects: Identify cross-cutting concerns and create aspects with advice and pointcuts.
+
+    2::Write Advice: Implement behavior associated with concerns using "before," "after," or "around" advice.
+
+    3::Define Pointcuts: Specify criteria using expressions to identify where advice should be applied.
+
+    4::Weaving: Integrate aspects into the codebase through compile-time or runtime weaving.
+
+    5::Apply Aspects: Use annotations or configuration to apply aspects to target code.
+
+    6::Execute Application: Run the application, and AOP framework ensures aspect integration.
+
+    7::Verify and Maintain: Confirm effective application, maintain, and update aspects as needed.
+
+
+In Aspect-Oriented Programming (AOP), developers identify concerns, implement behavior, specify application
+points, integrate aspects, apply them, execute the application, and maintain modularized cross-cutting concerns
+for improved code manageability and readability.
