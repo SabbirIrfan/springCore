@@ -11,6 +11,8 @@ public class Test {
         context.registerShutdownHook();
         Person p = (Person) context.getBean("person");
 
-        System.out.println(p.toString());
+
+
+        System.out.println(p);
     }
 }

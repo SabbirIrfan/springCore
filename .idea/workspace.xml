@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e9045e3-458b-4cf3-a6bb-918ae9723edb" name="Changes" comment="spring core &#10;--- JDBC CRUD &#10; &#10; 9/1/24">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jdk21/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/AOP.text" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/DOC_SAVED/spring-framework.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernet.cfg.xml" afterDir="false" />
+    <list default="true" id="4e9045e3-458b-4cf3-a6bb-918ae9723edb" name="Changes" comment="spring core revised in DOCUMENTATION &#10;--- IoC &#10;--- BEAN&#10;--- DI &#10; &#10; 9/1/24">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hibernate/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/steriotype/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/steriotype/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/DOC_SAVED/spring-framework.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DOC_SAVED/spring-framework.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/constructorpersonConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/constructorpersonConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/nots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/nots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernet.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernet.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/steriotypeConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/steriotypeConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +26,8 @@
       <list>
         <option value="package-info" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,7 +61,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/john_doe/IdeaProjects/SpringCore/src/main/resources/DOC_SAVED",
+    "last_opened_file_path": "/home/john_doe/Desktop/test/IdeaProjects/NoteTaker",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,7 +82,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.example.constructorinjeciton.Test">
+  <component name="RunManager" selected="Application.org.example.hibernate.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -159,9 +159,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.example.hibernate.App" />
         <item itemvalue="Application.org.example.constructorinjeciton.Test" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.org.example.hibernate.App" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.App" />
       </list>
@@ -189,7 +189,8 @@
       <workItem from="1704286937861" duration="3913000" />
       <workItem from="1704349704290" duration="40313000" />
       <workItem from="1704864065596" duration="1115000" />
-      <workItem from="1704866524831" duration="11710000" />
+      <workItem from="1704866524831" duration="16115000" />
+      <workItem from="1704954893955" duration="9816000" />
     </task>
     <task id="LOCAL-00001" summary="spring core -- use of bean , IoC 2/1/24">
       <option name="closed" value="true" />
@@ -231,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704864103459</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="spring core revised in DOCUMENTATION &#10;--- IoC &#10;--- BEAN&#10;--- DI &#10; &#10; 9/1/24">
+      <option name="closed" value="true" />
+      <created>1704897541373</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704897541373</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +252,8 @@
     <MESSAGE value="spring core &#10;--  scope &gt;&gt; prototype / singletone&#10;--  SpEL :&#10;--removing complexXML&#10;-- with @Configuration and @Bean&#10;-- also @ComponentScan without using @Bean &#10;IoC 3/1/24" />
     <MESSAGE value="spring core &#10;--- connecting JDBC&#10; &#10;IoC 8/1/24" />
     <MESSAGE value="spring core &#10;--- JDBC CRUD &#10; &#10; 9/1/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring core &#10;--- JDBC CRUD &#10; &#10; 9/1/24" />
+    <MESSAGE value="spring core revised in DOCUMENTATION &#10;--- IoC &#10;--- BEAN&#10;--- DI &#10; &#10; 9/1/24" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring core revised in DOCUMENTATION &#10;--- IoC &#10;--- BEAN&#10;--- DI &#10; &#10; 9/1/24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -257,6 +267,10 @@
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.tool.schema.spi.CommandAcceptanceException" package="org.hibernate.tool.schema.spi" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
