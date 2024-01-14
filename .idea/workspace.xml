@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e9045e3-458b-4cf3-a6bb-918ae9723edb" name="Changes" comment="spring core revised in DOCUMENTATION &#10;--- IoC &#10;--- BEAN&#10;--- DI &#10; &#10; 9/1/24">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.txt" afterDir="false" />
+    <list default="true" id="4e9045e3-458b-4cf3-a6bb-918ae9723edb" name="Changes" comment="spring core revised in DOCUMENTATION &#10;--- DI-- setter &#10;--- hibernate database @Entity &#10; &#10; 11/1/24">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/EmbedDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/MyCertificate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/fetchDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/onetoone/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/onetoone/OneToOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/onetoone/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/pic.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorinjeciton/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hibernate/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DOC_SAVED/spring-framework.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DOC_SAVED/spring-framework.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/constructorpersonConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/constructorpersonConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hibernate/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernet.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernet.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/steriotypeConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/steriotypeConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +50,11 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.App.executor": "Run",
+    "Application.EmbedDemo.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.OneToOne.executor": "Run",
     "Application.Test.executor": "Run",
+    "Application.fetchDemo.executor": "Run",
     "Application.org.example.autowire.Test.executor": "Run",
     "Application.org.example.configcomponenetbean.Test.executor": "Run",
     "Application.org.example.constructorinjeciton.Test.executor": "Run",
@@ -61,7 +67,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/john_doe/Desktop/test/IdeaProjects/NoteTaker",
+    "last_opened_file_path": "/home/john_doe/IdeaProjects/SpringCore/src/main/java/org/example/hibernate",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,24 +79,25 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/hibernate" />
       <recent name="$PROJECT_DIR$/src/main/resources/DOC_SAVED" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/steriotype" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/hibernate" />
       <recent name="$PROJECT_DIR$/src/main/java/resources" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.example.hibernate.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.example.springjdbc.App" />
+  <component name="RunManager" selected="Application.OneToOne">
+    <configuration name="EmbedDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.hibernate.EmbedDemo" />
       <module name="SpringCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.springjdbc.entity.*" />
+          <option name="PATTERN" value="org.example.hibernate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.jdk21.Main" />
+    <configuration name="OneToOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.hibernate.onetoone.OneToOne" />
       <module name="SpringCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.jdk21.*" />
+          <option name="PATTERN" value="org.example.hibernate.onetoone.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.steriotype.Test" />
+    <configuration name="fetchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.hibernate.fetchDemo" />
       <module name="SpringCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.steriotype.*" />
+          <option name="PATTERN" value="org.example.hibernate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,19 +158,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.EmbedDemo" />
+      <item itemvalue="Application.OneToOne" />
+      <item itemvalue="Application.fetchDemo" />
       <item itemvalue="Application.org.example.constructorinjeciton.Test" />
       <item itemvalue="Application.org.example.hibernate.App" />
-      <item itemvalue="Application.App" />
-      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OneToOne" />
+        <item itemvalue="Application.EmbedDemo" />
+        <item itemvalue="Application.fetchDemo" />
         <item itemvalue="Application.org.example.hibernate.App" />
         <item itemvalue="Application.org.example.constructorinjeciton.Test" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +197,7 @@
       <workItem from="1704349704290" duration="40313000" />
       <workItem from="1704864065596" duration="1115000" />
       <workItem from="1704866524831" duration="16115000" />
-      <workItem from="1704954893955" duration="9816000" />
+      <workItem from="1704954893955" duration="25870000" />
     </task>
     <task id="LOCAL-00001" summary="spring core -- use of bean , IoC 2/1/24">
       <option name="closed" value="true" />
@@ -240,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704897541373</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="spring core revised in DOCUMENTATION &#10;--- DI-- setter &#10;--- hibernate database @Entity &#10; &#10; 11/1/24">
+      <option name="closed" value="true" />
+      <created>1704984169605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704984169605</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +268,8 @@
     <MESSAGE value="spring core &#10;--- connecting JDBC&#10; &#10;IoC 8/1/24" />
     <MESSAGE value="spring core &#10;--- JDBC CRUD &#10; &#10; 9/1/24" />
     <MESSAGE value="spring core revised in DOCUMENTATION &#10;--- IoC &#10;--- BEAN&#10;--- DI &#10; &#10; 9/1/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring core revised in DOCUMENTATION &#10;--- IoC &#10;--- BEAN&#10;--- DI &#10; &#10; 9/1/24" />
+    <MESSAGE value="spring core revised in DOCUMENTATION &#10;--- DI-- setter &#10;--- hibernate database @Entity &#10; &#10; 11/1/24" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring core revised in DOCUMENTATION &#10;--- DI-- setter &#10;--- hibernate database @Entity &#10; &#10; 11/1/24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -270,6 +286,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.hibernate.tool.schema.spi.CommandAcceptanceException" package="org.hibernate.tool.schema.spi" />
           <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.FileNotFoundException" package="java.io" />
+          <option name="timeStamp" value="3" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

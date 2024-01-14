@@ -1,1 +1,29 @@
 **** DO NOT USE RESERVED WORD OF SQL FOR THE ENTITY COLUMN ********
+
+@Entity
+
+@table
+@Id
+@GeneratedValue
+
+@Column
+
+@Transient- not to save in the table
+
+@Temporal - used over the date format ....
+@Lob - tells hibernate that it is a large object
+
+@OneToMany
+@OneToOne
+@ManyToOne
+@joinColumn
+
+
+%% get() vs load() %%
+** if the existence of the data in the database is asured then >> get() > return null if not found
+** else load() >> throws ObjectNotFoundException if object is absent in the database
+
+*** load() >> uses the lazy initialization >> which increases the performance.
+*** %% lazy initialization %% only hits the database if any method of the object( other than the getId())
+*** is called.
+

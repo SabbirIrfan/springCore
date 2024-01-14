@@ -5,10 +5,12 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.stat.Statistics;
+
+import java.io.FileInputStream;
+import java.io.IOException;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("hello hibernate");
 
         Configuration configuration = new Configuration();
@@ -24,15 +26,25 @@ public class App {
 //        System.out.println(sessionFactory.isClosed());
 
         //Creating student
+//        try{
 
-        Student student = new Student(2,"RESERVED WORDS","SHOULD NOT BE IN THE COLUMN NAME");
+            FileInputStream fis = new FileInputStream("src/main/resources/HH.mp4");
+            byte[] data = new byte[fis.available()];
+            fis.read(data);
 
-        Session session = sessionFactory.openSession();
-        Transaction tx = session.beginTransaction();
+            Student student = new Student(10 ,"RESERVED WORDS",data,"SHOULD NOT BE IN THE COLUMN NAME");
 
-        session.persist(student);
+            Session session = sessionFactory.openSession();
+            Transaction tx = session.beginTransaction();
 
-        tx.commit();
+            session.persist(student);
+
+            tx.commit();
+
+//        }catch (Exception e){
+//            System.out.println("Error" + e.getMessage());
+//        }
+
 
     }
 }

@@ -10,8 +10,10 @@
         <property name="connection.url">jdbc:mysql://localhost:3306/regiForm</property>
         <property name="connection.username">root</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-<!--        <property name="hbm2ddl.auto">update</property>-->
+        <property name="hbm2ddl.auto">create</property>
         <property name="hibernate.show_sql">true</property>
         <mapping  class="org.example.hibernate.Student"/>
+        <mapping  class="org.example.hibernate.onetoone.Question"/>
+        <mapping  class="org.example.hibernate.onetoone.Answer"/>
     </session-factory>
 </hibernate-configuration>
