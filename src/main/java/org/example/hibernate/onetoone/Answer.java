@@ -1,16 +1,26 @@
 package org.example.hibernate.onetoone;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import jakarta.persistence.OneToOne;
 
 import java.security.PrivateKey;
 @Entity
 public class Answer {
 
     @Id
-//    @Column(name = "answer_Id")
+    @Column(name = "answer_Id")
     private int answerId;
+    private String answer;
+    @ManyToOne
+    Question question;
+
+    public Question getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(Question question) {
+        this.question = question;
+    }
 
     public Answer() {
     }
@@ -20,7 +30,7 @@ public class Answer {
         this.answer = answer;
     }
 
-    private String answer;
+
 
     public int getAnswerId() {
         return answerId;

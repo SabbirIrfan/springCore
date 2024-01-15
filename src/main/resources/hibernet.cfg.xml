@@ -15,5 +15,7 @@
         <mapping  class="org.example.hibernate.Student"/>
         <mapping  class="org.example.hibernate.onetoone.Question"/>
         <mapping  class="org.example.hibernate.onetoone.Answer"/>
+        <mapping  class="org.example.hibernate.manytomany.Employee"/>
+        <mapping  class="org.example.hibernate.manytomany.Project"/>
     </session-factory>
 </hibernate-configuration>

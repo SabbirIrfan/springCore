@@ -11,11 +11,12 @@ public class Employee implements ApplicationContextAware {
     private ApplicationContext applicationContext;
 
     @Autowired
+    @Qualifier("ad2")
     private Address address;
 
     protected Address getAddress() {
 // notice the Spring API dependency!
-        return this.applicationContext.getBean("address1", Address.class);
+        return this.applicationContext.getBean("ad2", Address.class);
     }
 
     public Employee(Address address) {

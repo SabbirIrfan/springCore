@@ -11,12 +11,17 @@ public class Address {
     private String shohor;
 
     public Address() {
+
         super();
+        System.out.println("Adderss default constructor has been called");
+
     }
 
     public Address(String golli, String shohor) {
         this.golli = golli;
         this.shohor = shohor;
+        System.out.println("Adderss 1");
+
     }
 
     public String getGolli() {

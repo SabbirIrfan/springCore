@@ -1,28 +1,37 @@
 package org.example.hibernate.onetoone;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.persistence.OneToOne;
 
 import java.security.PrivateKey;
+import java.util.List;
+
 @Entity
 public class Question {
 
     @Id
-//    @Column(name = "question_id")
+    @Column(name = "question_id")
     private int questionId;
     private  String question;
-    @OneToOne
-    private Answer answer;
+    @OneToMany(mappedBy = "question" ,fetch = FetchType.EAGER)
+//    @Column(name = "answer_Id")
+    private List<Answer> answers;
+
+    public List<Answer> getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(List<Answer> answers) {
+        this.answers = answers;
+    }
 
     public Question() {
     }
 
-    public Question(int questionId, String question, Answer answer) {
+    public Question(int questionId, String question, List<Answer> answers) {
         this.questionId = questionId;
         this.question = question;
-        this.answer = answer;
+        this.answers = answers;
     }
 
     public int getQuestionId() {
@@ -40,15 +49,6 @@ public class Question {
     public void setQuestion(String question) {
         this.question = question;
     }
-
-    public Answer getAnswer() {
-        return answer;
-    }
-
-    public void setAnswer(Answer answer) {
-        this.answer = answer;
-    }
-
 
 
 
