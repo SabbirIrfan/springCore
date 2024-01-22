@@ -16,7 +16,9 @@ public class OneToOne {
         SessionFactory sessionFactory = configuration.buildSessionFactory();
 
 
-
+        Session session = sessionFactory.openSession();
+        Transaction tx = session.beginTransaction();
+//
         Answer answer1 = new Answer(1,"its a programming language");
         Answer answer2 = new Answer(2,"pore bolbo");
         List<Answer> answers = new ArrayList<>();
@@ -28,9 +30,7 @@ public class OneToOne {
         question.setAnswers(answers);
         question.setQuestion("what is java");
         question.setQuestionId(1212);
-        Session session = sessionFactory.openSession();
-        Transaction tx = session.beginTransaction();
-//
+
         answer1.setQuestion(question);
         answer2.setQuestion(question);
         session.save(answer1);

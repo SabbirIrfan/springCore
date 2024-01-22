@@ -27,3 +27,22 @@
 *** %% lazy initialization %% only hits the database if any method of the object( other than the getId())
 *** is called.
 
+
+%%% hibernate object state / persistent life cycle:: %%%
+** In Hibernate, an object's state refers to its position
+**in the object lifecycle and its relationship with the database
+**(i) Transient State:: >object is in a transient state when it is newly created using the new keyword but
+                        has not yet been associated with any Hibernate Session.
+                        >Transient objects are not associated with any database table, and changes to these
+                        objects are not reflected in the database.
+**(ii) Persistent State:: >An object enters the persistent state when it is associated with a Hibernate Session using methods like save, persist, or update.
+                          >Changes to persistent objects are automatically synchronized with the database when the transaction is committed.
+                          >Objects in the persistent state are associated with a database table and can be retrieved, updated, and deleted.
+**(iii) Detached State::>An object becomes detached when it was once associated with a Session but is no longer actively associated. This can happen
+                        when the session is closed, the transaction ends, or the object is explicitly detached.
+                        >Detached objects are not automatically synchronized with the database.
+                        >Changes made to detached objects need to be explicitly managed using methods like update or merge when reattaching them to a new session.
+**(iv) Removed State::  >An object enters the removed state when it was associated with a Session, but it is explicitly deleted using the delete method.
+                        >Removed objects are no longer associated with a database table, and their removal is synchronized with the database upon transaction commit.
+
+**(v)
